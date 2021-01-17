@@ -6,6 +6,16 @@ body
 .grid-container
 {
     display: grid;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    grid-template-rows: 35px 871px 35px;
+}
+
+.grid-container > .top-nav
+{
+    grid-area: header;
+    background-color: yellow;
 }
 
 ul
@@ -18,9 +28,28 @@ li
     display: inline;
 }
 
+.grid-container > .main
+{
+    grid-area: main;
+    background-color: green;
+    justify-self: center;
+    align-self: center;
+}
+
 .search-box
 {
     border-radius: 45px;
     height: 35px;
     width: 500px;
+}
+
+.button:hover
+{
+    color: black;
+}
+
+.grid-container > .bottom-nav
+{
+    grid-area: footer;
+    background-color: blue;
 }
