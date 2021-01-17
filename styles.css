@@ -15,7 +15,12 @@ body
 .grid-container > .top-nav
 {
     grid-area: header;
-    background-color: yellow;
+}
+
+.top-nav-2
+{
+    position: relative;
+    left: 1500px;
 }
 
 ul
@@ -26,12 +31,15 @@ ul
 li
 {
     display: inline;
+    cursor: pointer;
+    margin: 10px;
+    opacity: .7;
+    font-size: 15px;
 }
 
 .grid-container > .main
 {
     grid-area: main;
-    background-color: green;
     justify-self: center;
     align-self: center;
 }
@@ -39,11 +47,23 @@ li
 .search-box
 {
     border-radius: 45px;
-    height: 35px;
+    height: 25px;
     width: 500px;
+    margin: 15px;
+    padding: 10px;
+    border: 10px;
+    position: relative;
+    bottom: 175px;
 }
 
-.button:hover
+.buttons
+{
+    position: relative;
+    left: 125px;
+    bottom: 180px;
+}
+
+.buttons:hover
 {
     color: black;
 }
@@ -51,5 +71,45 @@ li
 .grid-container > .bottom-nav
 {
     grid-area: footer;
-    background-color: blue;
+    background-color: rgb(207, 204, 204);
+}
+
+.logo
+{
+    margin: 15px;
+    padding: 15px;
+    border: 10px;
+    position: relative;
+    left: 100px;
+    bottom: 160px;
+}
+
+.lucky-box
+{
+    margin: 25px;
+    background-color: rgb(241, 237, 237);
+    border: none;
+    border-radius: 2px;
+    transform: scale(1.3);
+    width: 120px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.submit-box
+{
+    margin: 25px;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    border-radius: 2px;
+    transform: scale(1.3);
+    width: 107px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.bottom-nav-2
+{
+    position: relative;
+    left: 1270px;
 }
