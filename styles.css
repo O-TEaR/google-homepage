@@ -1,13 +1,17 @@
 body
 {
     font-family: Arial, Helvetica, sans-serif;
-}
-main
-{
-    displa
+    display: grid;
 }
 
 ul
 {
     list-style-type: none;
+}
+
+.search-box
+{
+    border-radius: 45px;
+    height: 35px;
+    width: 500px;
 }
