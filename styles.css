@@ -1,12 +1,21 @@
 body
 {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container
+{
     display: grid;
 }
 
 ul
 {
     list-style-type: none;
+}
+
+li
+{
+    display: inline;
 }
 
 .search-box
